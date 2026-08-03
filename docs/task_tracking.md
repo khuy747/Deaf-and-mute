@@ -1,77 +1,61 @@
-# 📌 Task Tracking — Tiến độ dự án
+# 📌 Task Tracking — Project Roadmap & Progress
 
-> **File này theo dõi tổng quan phase + task-level.**
-> Chia nhỏ chi tiết từng task lớn → xử lý trên nháp (Sheets, giấy, scratch) — xong bỏ được.
-> Docs kết quả → ghi vào `README.md` của module / thư mục tương ứng.
+> **This document tracks overall project milestones and learning module progress.**
 
 ---
 
-## 📊 Tổng quan tiến độ
+## 📊 Overall Progress Summary
 
-| Phase | Tên                        | Trạng thái | Ghi chú                |
-| ----- | -------------------------- | ---------- | ---------------------- |
-| 0     | Khởi tạo dự án            | ✅ Done     | Cấu trúc + docs xong  |
-| 3     | Software                   | ⬜ Todo     |                        |
-| 5     | Test & Release             | ⬜ Todo     |                        |
+| Phase | Description | Status | Notes |
+|-------|-------------|--------|-------|
+| 0 | Project Initialization | ✅ Done | Directory layout, rules & initial templates created |
+| 1 | Specs & Architecture | ✅ Done | Specs, architecture & module contracts defined in English |
+| 2 | Environment Setup | ✅ Done | `software/requirements.txt` ready for installation |
+| 3 | Code Module | 🔨 In Progress | Coding step-by-step with pair programming |
+| 4 | Integration & Testing | ⬜ Todo | End-to-end testing & HUD polishing |
+| 5 | Release v1.0 | ⬜ Todo | Project completion & showcase |
 
-**Ký hiệu**: ✅ Done · 🔨 Đang làm · ⚠️ Blocked · ⬜ Todo
-
----
-
-## 🔧 Chi tiết từng Phase
-
-### Phase 0 — Khởi tạo dự án ✅
-
-- [x] Tạo cấu trúc thư mục
-- [x] Viết PROJECT_RULES.md
-- [x] Viết specs.md (draft)
-- [x] Viết task_tracking.md
-
----
-### Phase 3 — Software ⬜
-
-- [ ] Setup project
-- [ ] Giao tiếp với firmware
-- [ ] UI / chức năng chính
-
-> *Thêm / sửa task khi bắt đầu phase này.*
+**Status Icons**: ✅ Done · 🔨 In Progress · ⚠️ Blocked · ⬜ Todo
 
 ---
 
-### Phase 5 — Test & Release ⬜
+## 🔧 Detailed Task Breakdown
 
-- [ ] Sửa bug còn lại
-- [ ] Hoàn thiện docs
-- [ ] Release v1.0
-
----
-
-## 🏁 Milestone chính
-
-| #  | Milestone                              | Phase | Deadline   | Trạng thái |
-| -- | -------------------------------------- | ----- | ---------- | ---------- |
-| M1 | Cấu trúc repo + specs hoàn chỉnh      | 0     | *(ngày)*   | ✅         |
-| M2 | Software test pass             | 2     | *(ngày)*   | ⬜         |
-| M3 | Hệ thống chạy end-to-end              | 3     | *(ngày)*   | ⬜         |
-| M4 | Release v1.0                           | 4     | *(ngày)*   | ⬜         |
+### Phase 2 — Environment Setup ✅
+- [x] Create `software/requirements.txt` dependency file
 
 ---
 
-## 📝 Nhật ký dự án
+### Phase 3 — Step-by-Step Learning & Coding 🔨
 
-| Ngày       | Phase | Đã làm                              | Kết quả / Blockers        | ➡️ Việc tiếp              |
-| ---------- | ----- | ----------------------------------- | -------------------------- | -------------------------- |
-| *(ngày)*   | 0     | Tạo cấu trúc project template      | ✅ OK                      | Bắt đầu điền specs.md     |
+- [ ] **Module 1: Camera Stream (`software/src/camera.py`)**
+  - Learn OpenCV `VideoCapture`, resolution setup, frame flipping, and loop handling.
+
+- [ ] **Module 2: Hand Tracking (`software/src/hand_tracker.py`)**
+  - Learn MediaPipe Hands model, 21 3D landmarks, normalized coordinates to pixel coordinates mapping.
+
+- [ ] **Module 3: Finger Gesture Classifier (`software/src/gesture_classifier.py`)**
+  - Learn landmark position comparison algorithms (TIP vs PIP joints) to detect extended fingers & count fingers.
+
+- [ ] **Module 4: Audio Synthesizer (`software/src/audio_player.py`)**
+  - Learn sine wave math generation ($f(t) = A \sin(2\pi f t)$), exponential decay envelopes, and Pygame sound playback.
+
+- [ ] **Module 5: UI Overlay & Main App (`software/src/ui_overlay.py` & `software/src/main.py`)**
+  - Learn OpenCV text/rectangle/landmark drawing, FPS calculation, keyboard events, and building the final application.
 
 ---
 
-## Hướng dẫn cập nhật
+## 🏁 Major Milestones
 
-1. **Khi bắt đầu task** → tick `[ ]` thành `[/]` (đang làm), ghi 1 dòng nhật ký.
-2. **Khi xong task** → tick `[x]`, viết `README.md` cho module, commit cùng code.
-3. **Khi phase chuyển trạng thái** → update bảng tổng quan.
-4. **Khi đạt milestone** → update bảng milestone.
-5. **Chia nhỏ task lớn** → dùng nháp (Sheets / giấy / scratch) — xong bỏ được.
+| # | Milestone | Phase | Status |
+|---|-----------|-------|--------|
+| M1 | Complete Repo Architecture & Specs | 1 | ✅ |
+| M2 | Module 1: Camera Stream Running | 3 | 🔨 |
+| M3 | Module 2: Hand Tracking Working | 3 | ⬜ |
+| M4 | Module 3: Gesture & Finger Count Working | 3 | ⬜ |
+| M5 | Module 4: Real-time Audio Playing | 3 | ⬜ |
+| M6 | Module 5: Complete Air Piano Application | 4 | ⬜ |
 
-> 💡 Khi commit, ghi tóm tắt tiến độ phase vào commit message.
-> Ví dụ: `[FW] P2.1 — driver encoder xong, test pass`
+---
+
+*Last Updated: 2026-08-03*

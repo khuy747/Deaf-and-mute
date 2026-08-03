@@ -14,12 +14,9 @@
 - [1. Mục tiêu & Phạm vi dự án](#1-mục-tiêu--phạm-vi-dự-án)
 - [2. Yêu cầu chức năng](#2-yêu-cầu-chức-năng)
 - [3. Yêu cầu phi chức năng](#3-yêu-cầu-phi-chức-năng)
-- [4. Đặc tả phần cứng](#4-đặc-tả-phần-cứng)
-- [5. Đặc tả firmware](#5-đặc-tả-firmware)
-- [6. Đặc tả software](#6-đặc-tả-software)
-- [7. Giao tiếp giữa các thành phần](#7-giao-tiếp-giữa-các-thành-phần)
-- [8. Tài liệu tham khảo](#8-tài-liệu-tham-khảo)
-- [9. Open Questions](#9-open-questions)
+- [4. Đặc tả software](#6-đặc-tả-software)
+- [5. Tài liệu tham khảo](#8-tài-liệu-tham-khảo)
+- [6. Open Questions](#9-open-questions)
 
 ---
 
@@ -31,12 +28,12 @@ Dự án được thực hiện nhằm học tập, giúp hiểu hơn về ML tr
 
 ### 1.2 Phạm vi MVP (Minimum Viable Product)
 
-**Trong scope MVP:**
+**Scope MVP:**
 - Detect được 2 bàn tay
 - Phát hiện được các cử chỉ của bàn tay
 - Thiết kế các 
 
-**Ngoài scope MVP (làm sau):**
+**Ngoài Scope MVP:**
 - Phát triển lên trong việc nhận diện cử chỉ tay vào ngôn ngữ hình thể
 
 ---
