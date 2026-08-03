@@ -11,10 +11,7 @@
 | Phase | Tên                        | Trạng thái | Ghi chú                |
 | ----- | -------------------------- | ---------- | ---------------------- |
 | 0     | Khởi tạo dự án            | ✅ Done     | Cấu trúc + docs xong  |
-| 1     | Thiết kế phần cứng        | ⬜ Todo     |                        |
-| 2     | Firmware                   | ⬜ Todo     |                        |
 | 3     | Software                   | ⬜ Todo     |                        |
-| 4     | Tích hợp & Calibration    | ⬜ Todo     |                        |
 | 5     | Test & Release             | ⬜ Todo     |                        |
 
 **Ký hiệu**: ✅ Done · 🔨 Đang làm · ⚠️ Blocked · ⬜ Todo
@@ -31,29 +28,6 @@
 - [x] Viết task_tracking.md
 
 ---
-
-### Phase 1 — Thiết kế phần cứng ⬜
-
-- [ ] Chọn linh kiện chính
-- [ ] Thiết kế schematic
-- [ ] Thiết kế PCB layout
-- [ ] Sản xuất & nhận board
-
-> *Thêm / sửa task khi bắt đầu phase này.*
-
----
-
-### Phase 2 — Firmware ⬜
-
-- [ ] Setup project (IDE, HAL config)
-- [ ] Viết peripheral drivers (`peri_*/`)
-- [ ] Viết algorithms (`algo_*/`)
-- [ ] Tích hợp & state machine chính
-
-> *Mỗi module xong → viết `README.md` trong folder module → tick `[x]` → commit cùng code.*
-
----
-
 ### Phase 3 — Software ⬜
 
 - [ ] Setup project
@@ -61,14 +35,6 @@
 - [ ] UI / chức năng chính
 
 > *Thêm / sửa task khi bắt đầu phase này.*
-
----
-
-### Phase 4 — Tích hợp & Calibration ⬜
-
-- [ ] Kết nối firmware ↔ software end-to-end
-- [ ] Calibration
-- [ ] Test toàn hệ thống
 
 ---
 
@@ -85,10 +51,9 @@
 | #  | Milestone                              | Phase | Deadline   | Trạng thái |
 | -- | -------------------------------------- | ----- | ---------- | ---------- |
 | M1 | Cấu trúc repo + specs hoàn chỉnh      | 0     | *(ngày)*   | ✅         |
-| M2 | Board sản xuất xong                    | 1     | *(ngày)*   | ⬜         |
-| M3 | Firmware drivers test pass             | 2     | *(ngày)*   | ⬜         |
-| M4 | Hệ thống chạy end-to-end              | 3     | *(ngày)*   | ⬜         |
-| M5 | Release v1.0                           | 4     | *(ngày)*   | ⬜         |
+| M2 | Software test pass             | 2     | *(ngày)*   | ⬜         |
+| M3 | Hệ thống chạy end-to-end              | 3     | *(ngày)*   | ⬜         |
+| M4 | Release v1.0                           | 4     | *(ngày)*   | ⬜         |
 
 ---
 

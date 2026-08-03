@@ -27,19 +27,17 @@
 
 ### 1.1 Mục tiêu
 
-*(Dự án giải quyết vấn đề gì? Dùng cho ai? Ứng dụng cụ thể?)*
-
-(?)
+Dự án được thực hiện nhằm học tập, giúp hiểu hơn về ML trong việc nhận diện cử chỉ tay.
 
 ### 1.2 Phạm vi MVP (Minimum Viable Product)
 
 **Trong scope MVP:**
-- (?) — liệt kê chức năng PHẢI có ở phiên bản đầu tiên
+- Detect được 2 bàn tay
+- Phát hiện được các cử chỉ của bàn tay
+- Thiết kế các 
 
 **Ngoài scope MVP (làm sau):**
-- (?) — liệt kê những thứ hay nhưng CHƯA cần ở MVP
-
-> Ghi rõ scope giúp tránh bị "feature creep" — làm quá nhiều thứ cùng lúc.
+- Phát triển lên trong việc nhận diện cử chỉ tay vào ngôn ngữ hình thể
 
 ---
 
@@ -65,52 +63,7 @@
 > Thêm / bớt dòng tùy dự án. Không phải dự án nào cũng cần tất cả.
 
 ---
-
-## 4. Đặc tả phần cứng
-
-> *Bỏ section này nếu dự án không có phần cứng.*
-
-### 4.1 Tổng quan
-
-| Thuộc tính | Giá trị |
-|-----------|---------|
-| MCU / SoC | (?) *(dòng, package, Flash/RAM)* |
-| Nguồn điện | (?) *(pin / adapter / USB — voltage rails)* |
-| Cơ khí | (?) *(kích thước, vật liệu, gia công)* |
-
-### 4.2 Danh sách linh kiện chính
-
-| # | Linh kiện | Chức năng | Interface | Ghi chú |
-|---|----------|-----------|-----------|---------|
-| 1 | (?) | | | |
-
-### 4.3 Pinout
-
-| Chân MCU | Chức năng | Ngoại vi | Module |
-|----------|-----------|----------|--------|
-| (?) | | | |
-
-> Chi tiết schematic, PCB, BOM nằm trong `hardware/`.
-
----
-
-## 5. Đặc tả firmware
-
-> *Bỏ section này nếu dự án không có firmware.*
-
-| Thuộc tính | Giá trị |
-|-----------|---------|
-| IDE / Toolchain | (?) *(STM32CubeIDE / Keil / PlatformIO / …)* |
-| HAL / Framework | (?) *(STM32 HAL / LL / Arduino / ESP-IDF / …)* |
-| RTOS | (?) *(bare-metal / FreeRTOS / …)* |
-| Tần số loop chính | (?) *(1 kHz / event-driven / …)* |
-
-> Kiến trúc phân tầng firmware (Application → algo → peri → HAL) xem tại
-> [architecture.md](architecture.md) và [PROJECT_RULES.md](../PROJECT_RULES.md).
-
----
-
-## 6. Đặc tả software
+## 4. Đặc tả software
 
 > *Bỏ section này nếu dự án không có software host/PC/mobile.*
 
@@ -123,20 +76,7 @@
 
 ---
 
-## 7. Giao tiếp giữa các thành phần
-
-> Mô tả cách các thành phần (hardware ↔ firmware ↔ software) nói chuyện với nhau.
-
-| Kết nối | Giao thức | Data format | Ghi chú |
-|---------|-----------|-------------|---------|
-| MCU ↔ Host | (?) *(UART / USB / BLE / WiFi)* | (?) *(text / binary / JSON)* | |
-| Sensor ↔ MCU | (?) *(I2C / SPI / ADC)* | N/A — driver level | |
-
-> Chi tiết protocol và API contracts xem tại [architecture.md](architecture.md).
-
----
-
-## 8. Tài liệu tham khảo
+## 5. Tài liệu tham khảo
 
 | Loại | Tên | Link / File |
 |------|-----|-------------|
@@ -148,7 +88,7 @@
 
 ---
 
-## 9. Open Questions — Các quyết định chưa đưa ra
+## 6. Open Questions — Các quyết định chưa đưa ra
 
 > Tracking câu hỏi thiết kế cần giải quyết. Khi resolved → ghi kết quả và chuyển lên mục tương ứng.
 
